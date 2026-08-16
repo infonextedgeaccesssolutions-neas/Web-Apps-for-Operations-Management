@@ -1,0 +1,21 @@
+OPSDECK — IMPROVED BROWSER CONTROL BUILD
+
+Improvements included:
+- Removed duplicate Admin "Inspection Reports" navigation entry.
+- Added Ctrl/Cmd + K command palette for fast navigation and quick controls.
+- Added mobile bottom control dock for Dashboard, Gantt, S-Curve, Geo and Approval Gate.
+- Added responsive current-view label in the mobile top bar.
+- Added installable PWA flow (manifest + app icon + install button when supported).
+- Upgraded service worker cache from shell-v1 to shell-v2 and precaches PWA metadata.
+- Added root vercel.json with Vite build settings, SPA routing, cache headers and browser security headers.
+- Renamed package to opsdeck-operations-control and specified Node.js >=22 for Vercel builds.
+
+Vercel deployment:
+1. Import this folder into the Vercel project that owns the existing app URL.
+2. Framework: Vite (auto-detected).
+3. Build command: npm run build
+4. Output directory: dist
+5. Deploy to Production.
+
+Important:
+The live URL supplied in chat is not visible in the Vercel team currently connected to ChatGPT, so this package does not overwrite that external deployment by itself.
